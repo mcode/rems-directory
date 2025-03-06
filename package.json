@@ -1,0 +1,26 @@
+{
+  "name": "rems-directory",
+  "version": "1.0.0",
+  "description": "REMS Directory Listing API",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "start": "node ./dist/server.js"
+  },
+  "keywords": [
+    "rems"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@types/node": "^22.10.0",
+    "dotenv": "^16.4.7",
+    "env-var": "^7.5.0",
+    "runner": "^4.0.1"
+  }
+}
