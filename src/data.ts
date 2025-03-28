@@ -23,7 +23,7 @@ export const medications : Medication[] = [
     }, {
         brand_name: "Isotretinoin",
         generic_name: "ISOTRETINOIN",
-        product_ndc: "70771-1557-4",
+        product_ndc: "0245-0571-01",
         rems_administrator: "REMS Prototype Admin 2",
         rems_endpoint: env.get('REMS_ADMIN_2_URL').asString(),
         rems_approval_date: "20240906",
@@ -32,7 +32,7 @@ export const medications : Medication[] = [
     }, {
         brand_name: "Fentanyl Citrate",
         generic_name: "FENTANYL CITRATE",
-        product_ndc: "63459-502-01",
+        product_ndc: "63459-502-30",
         rems_administrator: "REMS Prototype Admin 1",
         rems_endpoint: env.get('REMS_ADMIN_1_URL').asString(),
         rems_approval_date: "20240906",
@@ -41,7 +41,7 @@ export const medications : Medication[] = [
     }, {
         brand_name: "Turalio",
         generic_name: "PEXIDARTINIB HYDROCHLORIDE",
-        product_ndc: "65597-407-20",
+        product_ndc: "65597-402-20",
         rems_administrator: "REMS Prototype Admin 2",
         rems_endpoint: env.get('REMS_ADMIN_2_URL').asString(),
         rems_approval_date: "20240906",
