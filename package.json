@@ -14,11 +14,11 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@types/node": "^22.13.13",
     "tsc-watch": "^6.2.1",
     "typescript": "^5.6.3"
   },
   "dependencies": {
-    "@types/node": "^22.10.0",
     "dotenv": "^16.4.7",
     "env-var": "^7.5.0",
     "runner": "^4.0.1"
