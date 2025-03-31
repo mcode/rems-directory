@@ -1,6 +1,8 @@
 # Description
 
-The [REMS](https://www.fda.gov/drugs/drug-safety-and-availability/risk-evaluation-and-mitigation-strategies-rems) directory  application is an app that acts as a API endpoint similar to the FDA API. It returns medication information when queried at the /drug/ndc.json endpoint. It adds the rems_endpoint that identifies the CDS Hooks server used by the REMS program.
+The [REMS](https://www.fda.gov/drugs/drug-safety-and-availability/risk-evaluation-and-mitigation-strategies-rems) directory  application is an app that acts as a API endpoint similar to the FDA API. It returns medication information when queried at the /drug/ndc.json endpoint. It adds the rems_endpoint that identifies the CDS Hooks server used by the REMS program. The /drugs/spl.zip returns spl information for the drugs it has spl info for, providing a zip file similar to the one from the FDA's website. The /health endpoint is a simple health check endpoint to make sure the server is live and online. 
+
+Disclaimer: The SPL Zip file information is test data not to be representative of real world SPL information. While they are based on the actual SPL Zip from FDA, the files have been modified for the purposes of the prototype and may even be out of date. The data in these files are not intended for medical use.
 
 # Getting Started with REMS Administrator
 
@@ -50,3 +52,6 @@ Following are a list of modifiable paths:
 | --------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
 | SERVER_PORT | 33333       | The port to run the server on. |
 | SERVER_HOST | `127.0.0.1` | The hostname of the server. |
+| SPL_ZIP_PATH | /src/spl/TESTDATA_rems_document_and_rems_indexing_spl_files.zip | the path to the spl zip |
+| REMS_ADMIN_1_URL | http://localhost:8090/ | the base url for the first rems admin |
+| REMS_ADMIN_2_URL | http://localhost:8095/ | the base url for the second rems admin |
