@@ -15,7 +15,7 @@ export const medications : Medication[] = [
     {
         brand_name: "ADDYI",
         generic_name: "FLIBANSERINE",
-        product_ndc: "58604-214",
+        product_ndc: "58604-214-30",
         rems_administrator: "REMS Prototype Admin 1",
         rems_endpoint: env.get('REMS_ADMIN_1_URL').asString(),
         rems_approval_date: "20240906",
@@ -41,7 +41,7 @@ export const medications : Medication[] = [
     }, {
         brand_name: "Turalio",
         generic_name: "PEXIDARTINIB HYDROCHLORIDE",
-        product_ndc: "65597-402-20",
+        product_ndc: "65597-407-20",
         rems_administrator: "REMS Prototype Admin 2",
         rems_endpoint: env.get('REMS_ADMIN_2_URL').asString(),
         rems_approval_date: "20240906",
