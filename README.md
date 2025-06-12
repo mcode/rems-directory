@@ -50,7 +50,7 @@ Following are a list of modifiable paths:
 
 | URI Name        | Default                                    | Description                                                                                                                 |
 | --------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| SERVER_PORT | 33333       | The port to run the server on. |
+| SERVER_PORT | 3323       | The port to run the server on. |
 | SERVER_HOST | `127.0.0.1` | The hostname of the server. |
 | SPL_ZIP_PATH | /src/spl/TESTDATA_rems_document_and_rems_indexing_spl_files.zip | the path to the spl zip |
 | REMS_ADMIN_1_CDS_URL | http://localhost:8090/ | the CDS base url for the first rems admin |
