@@ -73,6 +73,8 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
 
         if (response) {
             console.log(' - return: ' + response.results[0]?.brand_name);
+            console.log(' - CDS endpoint: ' + response.results[0]?.rems_cds_endpoint);
+            console.log(' - FHIR base URL: ' + response.results[0]?.rems_fhir_base_url);
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify(response));
