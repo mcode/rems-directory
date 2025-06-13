@@ -1,12 +1,6 @@
 FROM node:21-alpine
 WORKDIR /home/node/app/rems-directory
 
-ARG SERVER_PORT
-ENV SERVER_PORT=$SERVER_PORT
-
-ARG SERVER_HOST
-ENV SERVER_HOST=$SERVER_HOST
-
 COPY --chown=node:node . .
 RUN npm install
 EXPOSE 3323
