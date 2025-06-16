@@ -44,8 +44,8 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
                     foundElement = medications.find(element => element.generic_name.toLowerCase() === searchValue.toLowerCase());
                 } else if (searchKey === 'brand_name') {
                     foundElement = medications.find(element => element.brand_name.toLowerCase() === searchValue.toLowerCase());
-                } else if (searchKey === 'product_ndc') {
-                    foundElement = medications.find(element => element.product_ndc.toLowerCase() === searchValue.toLowerCase());
+                } else if (searchKey === 'package_ndc') {
+                    foundElement = medications.find(element => element.package_ndc.toLowerCase() === searchValue.toLowerCase());
                 }
 
                 if (foundElement) {
