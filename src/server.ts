@@ -44,8 +44,8 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
                     foundElement = medications.find(element => element.generic_name.toLowerCase() === searchValue.toLowerCase());
                 } else if (searchKey === 'brand_name') {
                     foundElement = medications.find(element => element.brand_name.toLowerCase() === searchValue.toLowerCase());
-                } else if (searchKey === 'product_ndc') {
-                    foundElement = medications.find(element => element.product_ndc.toLowerCase() === searchValue.toLowerCase());
+                } else if (searchKey === 'package_ndc') {
+                    foundElement = medications.find(element => element.package_ndc.toLowerCase() === searchValue.toLowerCase());
                 }
 
                 if (foundElement) {
@@ -73,6 +73,8 @@ const server = createServer((req: IncomingMessage, res: ServerResponse) => {
 
         if (response) {
             console.log(' - return: ' + response.results[0]?.brand_name);
+            console.log(' - CDS endpoint: ' + response.results[0]?.rems_cds_endpoint);
+            console.log(' - FHIR base URL: ' + response.results[0]?.rems_fhir_base_url);
             res.statusCode = 200;
             res.setHeader('Content-Type', 'application/json');
             res.end(JSON.stringify(response));

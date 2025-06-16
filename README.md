@@ -35,9 +35,9 @@ Query the server running on http://localhost:33333/ (or whichever port it was ru
 
 ### Example query endpoint:
 
-This will search for the listing for the drug with the product_ndc of 0591-2433 (Isotretinoin)
+This will search for the listing for the drug with the package_ndc of 0245-0571-01 (Isotretinoin)
 
-- `http://localhost:33333/drug/ndc.json?search=product_ndc=%220591-2433%22`
+- `http://localhost:33333/drug/ndc.json?search=package_ndc=%220591-2433%22`
 
 ## Environment Variables
 
@@ -50,8 +50,10 @@ Following are a list of modifiable paths:
 
 | URI Name        | Default                                    | Description                                                                                                                 |
 | --------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------- |
-| SERVER_PORT | 33333       | The port to run the server on. |
+| SERVER_PORT | 3323       | The port to run the server on. |
 | SERVER_HOST | `127.0.0.1` | The hostname of the server. |
 | SPL_ZIP_PATH | /src/spl/TESTDATA_rems_document_and_rems_indexing_spl_files.zip | the path to the spl zip |
-| REMS_ADMIN_1_URL | http://localhost:8090/ | the base url for the first rems admin |
-| REMS_ADMIN_2_URL | http://localhost:8095/ | the base url for the second rems admin |
+| REMS_ADMIN_1_CDS_URL | http://localhost:8090/ | the CDS base url for the first rems admin |
+| REMS_ADMIN_1_FHIR_URL | http://localhost:8090/ | the FHIR base url for the first rems admin |
+| REMS_ADMIN_2_CDS_URL | http://localhost:8095/ | the CDS base url for the second rems admin |
+| REMS_ADMIN_2_FHIR_URL | http://localhost:8095/ | the FHIR base url for the second rems admin |
