@@ -35,9 +35,9 @@ Query the server running on http://localhost:33333/ (or whichever port it was ru
 
 ### Example query endpoint:
 
-This will search for the listing for the drug with the product_ndc of 0591-2433 (Isotretinoin)
+This will search for the listing for the drug with the package_ndc of 0245-0571-01 (Isotretinoin)
 
-- `http://localhost:33333/drug/ndc.json?search=product_ndc=%220591-2433%22`
+- `http://localhost:33333/drug/ndc.json?search=package_ndc=%220591-2433%22`
 
 ## Environment Variables
 
