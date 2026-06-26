@@ -51,5 +51,14 @@ export const medications : Medication[] = [
         rems_fhir_base_url: env.get('REMS_ADMIN_1_FHIR_URL').asString(),
         rems_approval_date: "20240906",
         rems_modification_date: "20240906"
+    }, {
+        brand_name: "Pexidartinib Hydrochloride",
+        generic_name: "PEXIDARTINIB HYDROCHLORIDE",
+        package_ndc: "99999-407-20",
+        rems_administrator: "REMS Prototype Admin 2",
+        rems_cds_endpoint: env.get('REMS_ADMIN_2_CDS_URL').asString(),
+        rems_fhir_base_url: env.get('REMS_ADMIN_2_FHIR_URL').asString(),
+        rems_approval_date: "20240906",
+        rems_modification_date: "20240906"
     } 
 ];

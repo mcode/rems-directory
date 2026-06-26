@@ -10,8 +10,8 @@ import * as env from 'env-var';
 import { Medication, medications } from './data';
 import { Response, Meta, Results, ErrorResponse } from './response';
 
-const hostname = env.get('SERVER_HOST').asString();
-const port = env.get('SERVER_PORT').asInt();
+const hostname = env.get('SERVER_HOST').default('0.0.0.0').asString();
+const port = env.get('SERVER_PORT').default('3323').asPortNumber();
 const spl_zip_path = env.get('SPL_ZIP_PATH').asString()!;
 
 const server = createServer((req: IncomingMessage, res: ServerResponse) => {
