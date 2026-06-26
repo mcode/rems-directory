@@ -5,5 +5,5 @@ COPY --chown=node:node . .
 RUN npm install
 EXPOSE 3323
 
-HEALTHCHECK --interval=30s --start-period=15s --timeout=10m --retries=10 CMD wget --no-verbose --tries=1 --spider http://${SERVER_HOST}:${SERVER_PORT}/health || exit 1
+HEALTHCHECK --interval=30s --start-period=15s --timeout=10m --retries=10 CMD wget --no-verbose --tries=1 --spider http://127.0.0.1:${SERVER_PORT:-3323}/health || exit 1
 CMD npm run dev
